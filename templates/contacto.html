@@ -1,0 +1,31 @@
+{% extends "base.html" %}{% load static %}
+{% block title  %}AYUDA PERRUNA HOME{% endblock title %}
+{% block content %}
+
+<h1>contacto</h1>
+<p>Aquí presentamos 3</p>
+<form action="/procesar_formulario" method="post">
+    <label for="nombre">Nombres:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre" required><br>
+    <label for="apellido">Apellidos:</label>
+    <input type="text" id="apellido" name="apellido" placeholder="Ingrese apellidos" required><br>
+    <label for="telefono">Telefono    :</label>
+    <input type="text" id="telefono" name="telefono"  placeholder="ingrese telefono" required><br>
+    
+    <label for="correo    ">Correo    :</label>
+    <input type="email" id="correo" name="correo" placeholder="email" required><br>
+    
+    <label for="region">Region    :</label>
+    <input type="text" id="Region" name="Region"  placeholder="region" required><br>
+
+<label for="direccion">Direccion    :</label>
+<input type="text" id="direccion" name="direccion"  placeholder="Calle y Numero" required><br>
+
+<label for="comuna">Comuna    :</label>
+<input type="text" id="comuna" name="comuna"  placeholder="comuna" required><br>
+    
+<input type="button" value="Enviar"><br>
+</form>
+
+{% endblock %}
+    

@@ -1,0 +1,117 @@
+{% extends "base.html" %}{% load static %}
+{% block title  %}AYUDA PERRUNA HOME{% endblock title %}
+{% block content %}
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+        <style>
+        .navbar-title {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+    <script type="text/javascript">
+    window.onload = function() {
+            document.getElementById("boton").addEventListener("click", comprar);
+        }
+
+        function comprar() {
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+            var num3 = parseInt(document.getElementById("num3").value);
+            var num4 = parseInt(document.getElementById("num4").value);
+            var num5 = parseInt(document.getElementById("num5").value);
+            var suma = num1+num2+num3+num4+num5;
+
+            alert("Has añadido  nuevo articulo: " + suma);
+        }
+    </script>
+    
+</head>
+<body>
+    <header>
+       
+    </header>
+    <body font-family="Helvetica Neue sans-serif">
+        <script>
+            function showAlert() {
+                alert('¡has selecionado un articulo muy especial el cual tiene mucho detalle!');
+            }
+        </script>
+        <script>
+        function showAlert1() {
+            alert('¡has selecioonado un articulo muy especial el cual tiene mucho detalle!');
+        }
+        </script>
+        <section id="nosotros" class="pt-md-5">
+            <h2 class="text-center my-5">GALERIA</h2>
+            <div class="container">
+                <div class="row gy-3">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{% static 'images/imagen10.jpg' %}" class="card-img-top" width="300px" height="300" id="im">
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{% static 'images/imagen9.jpg' %}" class="card-img-top" width="300px" height="300" id="im">
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{% static 'images/imagen11.jpg' %}" class="card-img-top" width="300px" height="300" id="im">
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{% static 'images/img3.jpg' %}" class="card-img-top" width="300px" height="300" id="im">
+                            
+                        </div> 
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{% static 'images/imagen4.jpg' %}" class="card-img-top" width="300px" height="300" id="im">
+                            
+                        </div> 
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{% static 'images/imagen5.jpg' %}" class="card-img-top" width="300px" height="300" id="im">
+                            
+                        </div> 
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{% static 'images/imagen6.jpg' %}" class="card-img-top" width="300px" height="300" id="im">
+                            
+                        </div> 
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{% static 'images/imagen7.jpg' %}" class="card-img-top" width="300px" height="300" id="im">
+                            
+                        </div> 
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{% static 'images/imagen8.jpg' %}" class="card-img-top" width="300px" height="300" id="im">
+                            
+                        </div>
+                </div>
+          
+            </div>
+    
+        </section>
+        <section id="faq" class="py-md-5">
+    
+        </section>
+
+        {% endblock content %}

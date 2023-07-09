@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>layoud</title>
+</head>
+
+<body>
+    <h1>sitio web con django</h1>
+
+    <ul>
+        <li><a href="/inicio">Inicio</a>
+        <li>
+        <li> <a href="/contacto"> contacto</a>
+        <li>
+        <li> <a href="/nosotros"> nosotros</a>
+        <li>
+        <li> <a href="/donaciones"> donaciones</a>
+        <li>
+        <li> <a href="/tienda"> tienda</a>
+        <li>
+
+        <li> <a href="/registro">registro</a>
+        <li>
+        <li> <a href="/login"> login</a>
+         <li>
+    </ul>
+    <hr>
+
+    <div id="content">
+        {% block content %}
+
+         <!--Codigo de templates-->
+        {% endblock %}
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
