@@ -27,6 +27,8 @@ from ayuda_mascota.views import view_home
 from ayuda_mascota.views import view_nosotros
 from ayuda_mascota.views import view_tienda
 from ayuda_mascota.views import view_donaciones
+from ayuda_mascota.views import view_crud
+from ayuda_mascota.views import view_mascotas_add
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -44,4 +46,7 @@ urlpatterns = [
     path('tienda/', view_tienda.tienda),
     path('donaciones/', view_donaciones.donaciones),
     path('logout', view_login.logout),
+    path('crud/', view_crud.crud),
+    path('mascotasadd/', view_mascotas_add.mascotasAdd)
+   
 ]

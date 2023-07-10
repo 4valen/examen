@@ -1,0 +1,41 @@
+<button type="button">
+    <a href="{% url 'mascotas_add' %}">Agregar</a>
+</button>
+
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Título de tu página</title>
+    </head>
+    <body>
+<div style="text-aling: center;">
+        <h2>formulario</h2><br>
+    <form action="mascotasadd" method="POST">
+        {% csrf_token %}#para la seguridad del foruularoio
+
+    <pre>rut:   <input type="text" name="rut"></pre>
+    <pre>nombre:   <input type="text" name="nombre"></pre>
+
+    <input type="submit" name="opcion" value="Agregar">
+    </form> <br> <br>
+    
+    <br>
+
+    <div id="idMensajes">
+        {% if mensaje %}
+
+        {{mensaje}}
+    {%endif%}
+     </div>
+     <a href="{% url 'crud'%}">volver</a>
+</div>
+
+
+
+
+
+</body>
+</html>
