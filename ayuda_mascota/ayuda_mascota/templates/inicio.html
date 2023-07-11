@@ -1,0 +1,111 @@
+{% extends "base.html" %}{% load static %}
+{% block title  %}AYUDA PERRUNA HOME{% endblock title %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.min.css' %}" />
+<link rel="stylesheet" href="static">
+ <section class="home">
+     <div class="text"> <div id="carrusel-heroe" class="carousel slide carousel-fade" data-bs-ride="carousel">
+         <!--INDICADORES-->
+         <div class="carousel-indicators">
+           <button type="button" data-bs-target="#carrusel-heroe" data-bs-slide-to="0" aria-label="Slide 1"></button>
+           <button type="button" data-bs-target="#carrusel-heroe" data-bs-slide-to="1" aria-label="Slide 2"></button>
+           <button type="button" data-bs-target="#carrusel-heroe" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 3"></button>
+           <button type="button" data-bs-target="#carrusel-heroe" data-bs-slide-to="3" aria-label="Slide 4"></button>
+           <button type="button" data-bs-target="#carrusel-heroe" data-bs-slide-to="4" aria-label="Slide 5"></button>
+         </div>
+         <div class="carousel-inner">
+           <!--Imágenes del carrusel-->
+           <div class="carousel-item  c-item" data-bs-interval="2000">
+             <img src="https://cdn.onemars.net/sites/nutro_es_NkyIN_B9cV/image/gettyimages-175925832_1615921990619.jpeg" class="d-block w-100 c-img" alt="tienda">
+             <div class="carousel-caption top-0 mt-4">
+               <h1 class="display-1 fw-bolder text-capitalize"> Tienda</h1>
+               <p class="mt-5 fs-3 text-uppercase"> ¡Revisa nuestros productos!</p>
+               <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Ir</button>
+             </div>
+           </div>
+           <div class="carousel-item  c-item" data-bs-interval="2000">
+             <img src="https://www.tiendanimal.es/articulos/wp-content/uploads/2022/03/Gato-Singapura.jpg" class="d-block w-100 c-img" alt="nosotros">
+             <div class="carousel-caption top-0 mt-4">
+               <h1 class="display-1 fw-bolder text-capitalize">Nosotros</h1>
+               <p class="mt-5 fs-3 text-uppercase"> ¿Quienes somos?</p>
+               <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Ir</button>
+             </div>
+           </div>
+           <div class="carousel-item active c-item" data-bs-interval="2000">
+             <img src="https://radiosregionales.cl/wp-content/uploads/2022/12/lo-que-mas-odian-los-gatos-1.jpg" class="d-block w-100 c-img" alt="inicio">
+             <div class="carousel-caption top-0 mt-4">
+               <h1 class="display-1 fw-bolder text-capitalize">Inicio</h1>
+               <p class="mt-5 fs-3 text-uppercase">¡Bienvenido a Animalitos Pet Shop!</p>
+               <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Ir</button>
+             </div>
+           </div>
+           <div class="carousel-item c-item" data-bs-interval="2000">
+             <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/75552.ngsversion.1422285553360.jpg?w=1600&h=1067" class="d-block w-100 c-img" alt="donaciones">
+             <div class="carousel-caption top-0 mt-4">
+               <h1 class="display-1 fw-bolder text-capitalize">Donaciones</h1>
+               <p class="mt-5 fs-3 text-uppercase">¡Ayúdanos a ayudar!</p>
+               <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Ir</button>
+             </div>
+           </div>
+           <div class="carousel-item c-item" data-bs-interval="2000">
+             <img src="https://ca-times.brightspotcdn.com/dims4/default/c3f4b96/2147483647/strip/true/crop/1970x1108+39+0/resize/1200x675!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F12%2Fa5%2F79e097ccf62312d18a025f22ce48%2Fhoyla-recuento-11-cosas-aman-gatos-top-001" class="d-block w-100 c-img" alt="contacto">
+             <div class="carousel-caption top-0 mt-4">
+               <h1 class="display-1 fw-bolder text-capitalize">Contacto</h1>
+               <p class="mt-5 fs-3 text-uppercase"> sugerencias, reclamos e informaciones</p>
+               <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Ir</button>
+             </div>
+           </div>
+         </div>
+         <!--Botones para moverse adelante y atrás-->
+         <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-heroe" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carrusel-heroe" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+     </div>
+     <div>
+         <hr class="featurette-divider">
+     
+         <div class="row featurette">
+         <div class="col-md-7">
+             <h2 class="featurette-heading fw-normal lh-1">Orientación Sin Fines de Lucro.</h2>
+             <p class="lead"> todo partió através de las redes sociales, pero en la actualidad es casi imposible dar abasto a la demanda através de las redes sociales. Por eso, alumnos del Duoc nos han ayudado a construir una aplicación web</p>
+         </div>
+         <div class="col-md-5">
+             <img src="https://www.ust.cl/wp-content/uploads/sites/6/2016/03/medicina-veterinaria-716x400.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" alt="Descripción de la imagen">
+         </div>
+         </div>
+     
+         <hr class="featurette-divider">
+     
+         <div class="row featurette">
+         <div class="col-md-7 order-md-2">
+             <h2 class="featurette-heading fw-normal lh-1">Artículos para mascotas: Desde gatos hasta aves</h2>
+             <p class="lead">Buscamos llegar a un amplio círculo de clientes con tal de generar la mayor cantidad de ingresos posibles</p>
+         </div>
+         <div class="col-md-5">
+             <img src="https://assets.jumpseller.com/store/ohana-petshop/themes/245530/options/16281289/tienda-animales.jpg?1586041235" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" alt="Descripción de la imagen">
+         </div>
+         </div>
+     
+         <hr class="featurette-divider">
+     
+         <div class="row featurette">
+         <div class="col-md-7">
+             <h2 class="featurette-heading fw-normal lh-1">Por último queremos agradecer a la institución Duoc Uc.</h2>
+             <p class="lead">Gracias a sus alumnos y a la calidad de sus profesores,este sitio ha podido ser construído de forma gratuita por nuestros colegas.</p>
+         </div>
+         <div class="col-md-5">
+             <img src="https://seeklogo.com/images/D/duoc-uc-logo-F1437952BE-seeklogo.com.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" alt="Descripción de la imagen">
+         </div>
+         </div>
+     
+         <hr class="featurette-divider">
+     
+         <!-- /fin -->
+     </div>
+     {% endblock %}
